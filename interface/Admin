@@ -1,0 +1,59 @@
+public class Admin implements Guest {
+
+    protected String password_2;
+    protected Boolean read, write, edit, delete;
+    private String login, password;
+
+    public Admin(String login, String password, String password_2, Boolean read, Boolean write, Boolean edit, Boolean delete) {
+        this.password_2 = password_2;
+        this.read = read;
+        this.write = write;
+        this.edit = edit;
+        this.delete = delete;
+        this.login = login;
+        this.password = password;
+
+    }
+
+    public String getPassword_2() {
+        return password_2;
+    }
+
+    public void setPassword_2(String password_2) {
+        this.password_2 = password_2;
+    }
+
+    public void setRight() {
+        read = true;
+        write = true;
+        edit = true;
+        delete = true;
+        System.out.println("Админ имеет все права");
+    }
+    public String getLogin() {
+        return login;
+    }
+    public String getPassword() {
+        return password;
+    }
+    @Override
+    public Boolean getRead() {
+        return read;
+    }
+    @Override
+    public Boolean getWrite() {
+        return write;
+    }
+    @Override
+    public Boolean getEdit() {
+        return edit;
+    }
+    @Override
+    public Boolean getDelete() {
+        return delete;
+    }
+
+
+    @Override
+    public String toString() {
+        return getLogin() + " " + getPassword() + " " + getPassword_2() + " " + getRead() + " " + getWrite() + " " + getEdit() + " " + getDelete();
