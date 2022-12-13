@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        Guest[] guests = new Guest[10];
+        guests [0] =  new User("Логин: kir.rus","Пароль: 102030asd",true,true,false,false,"Фамилия: Еременко","Позиция: пользователь");
+        guests[1] = new User("Логин: ilia13", "Пароль: 122337", true, true, true, true,"Фамилия: Саенко","Позиция:пользователь");
+        guests[2] = new Admin("Логин: kostya14", "Пароль: 8458856658", "Пароль_2:14458822", true, true, true,true);
+        guests[3] = new Admin("Логин: sveta158", "Пароль: 854710002", "Пароль_2:9998555", true, true, true,true);
+        guests[4] = new Admin("Логин: kate124", "Пароль: 112FASDww658", "Пароль_2: 1214werfEE", true, true, true,true);
+        guests[5] = new User("Логин: mariaXXX", "Пароль: 1223312", true, true, true, true,"Фамилия: Игнатьева","Позиция:пользователь");
+        guests[6] = new User("Логин: LiZaLoVe", "Пароль: booklove123", true, true, true, true,"Фамилия: Бабенок","Позиция:пользователь");
+        guests[7] = new User("Логин: nastya", "Пароль: 18asw88550",  true, true, true,true,"Фамилия: Ромашкина","Позиция: пользователь");
+        guests[8] = new Admin("Логин: kostya", "Пароль: bo41iks", "Пароль_2: vj123d", true, true, true,true);
+        guests[9] = new User("Логин: pudj51", "Пароль: 8458856658", true, true, true,true,"Фамилия: Пудж","пользователь");
+
+        for (Guest guest : guests) {
+
+
+            System.out.println(guest);
+        }
+
+    }}
