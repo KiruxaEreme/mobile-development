@@ -1,0 +1,6 @@
+public interface Guest {
+    public Boolean getRead();
+    public Boolean getWrite();
+    public Boolean getEdit();
+    public Boolean getDelete();
+}
