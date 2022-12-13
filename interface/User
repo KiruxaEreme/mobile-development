@@ -1,0 +1,56 @@
+public class User implements Guest {
+    protected String surename, post;
+    private String login, password;
+    private Boolean read, write, edit, delete;
+    public User(String login, String password, Boolean read, Boolean write, Boolean edit, Boolean delete,String surename, String post) {
+        this.surename = surename;
+        this.post = post;
+        this.login = login;
+        this.password = password;
+        this.read = read;
+        this.write = write;
+        this.edit = edit;
+        this.delete = delete;
+    }
+
+    public String getSurename() {
+        return surename;
+    }
+
+    public void setSurename(String surename) {
+        this.surename = surename;
+    }
+
+    public String getPost() {
+        return post;
+    }
+    public String getLogin() {
+        return login;
+    }
+    public String getPassword() {
+        return password;
+    }
+    @Override
+    public Boolean getRead() {
+        return read;
+    }
+    @Override
+    public Boolean getWrite() {
+        return write;
+    }
+    @Override
+    public Boolean getEdit() {
+        return edit;
+    }
+    @Override
+    public Boolean getDelete() {
+        return delete;
+    }
+    public void setPost(String post) {
+        this.post = post;
+    }
+    @Override
+    public String toString() {
+        return getLogin() + " " + getPassword()  + " " + getRead() + " " + getWrite() + " " + getEdit() + " " + getDelete()+ " " + getSurename()+ " " + getPost();
+    }
+}
